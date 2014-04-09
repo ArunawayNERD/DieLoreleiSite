@@ -1,0 +1,72 @@
+<html>
+<title> Home </title>
+<head>
+<SCRIPT>
+		var imgArray=new Array(4);
+		imgArray[0]=new Image;
+		imgArray[0].src="Poem/Images/4.png";
+		imgArray[1]=new Image;
+		imgArray[1].src="Poem/Images/5.jpg";
+		imgArray[2]=new Image;
+		imgArray[2].src="Poem/Images/15.gif";
+		imgArray[3]=new Image;
+		imgArray[3].src="Poem/Images/17.png";
+		var index=2
+
+		function cycle()
+		{
+			document.banner.src=imgArray[index].src;
+			index++;
+			if (index==4)
+			{
+				index=0;
+			}
+			setTimeout("cycle()",2000);
+			return;
+		}	
+</SCRIPT>
+		
+<link rel = "stylesheet" style = "text/css" href = "FontSizeAndColor.css" /> 
+<style type = "text/css">
+body
+{
+	background:url('HomeBackground.jpg');
+	color:white;
+}
+</style>
+</head>
+<body onload = "cycle()">
+<center>
+<br />
+<br />
+<table cellpadding = "15px">
+<tr>
+	<td>
+		<div id = "Font25">
+			The Lorelei was a leagend from old Germany about a women who
+			is waiting for her love to return. With out giving to much 
+			away its not that easy. It was later made into a poem by the
+			German poet Heinrich Heine. 
+		</div>
+	</td>
+	<td>
+		<div id = "Font25">
+			On this site you will we able to read the full poem. 
+			You can also find info and pictures of the Rhein and
+			the Lorelei. Plus you can buy souvenirs that relate 
+			to the poem and the legend.
+		</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<embed src = "Finished Lorelei.wmv" autoplay = 0 ></embed>
+	</td>
+	<td>
+		<IMG NAME="banner" src="" height="300" width="300">
+	</td>
+</tr>
+</table>
+</center>
+</body>
+</html>
